@@ -10,7 +10,7 @@ export default class extends module {
     init() {
         this.scroll = new LocomotiveScroll({
             el: this.el,
-            smooth: true
+            smooth: false
         });
 
         this.scroll.on('call', (func, way, obj, id) => {
