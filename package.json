@@ -1,5 +1,5 @@
 {
-  "name": "wf-script-2",
+  "name": "wf-script-v2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickozy/wf-script-2.git"
+    "url": "git+https://github.com/nickozy/wf-script-v2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nickozy/wf-script-2/issues"
+    "url": "https://github.com/nickozy/wf-script-v2/issues"
   },
-  "homepage": "https://github.com/nickozy/wf-script-2#readme",
+  "homepage": "https://github.com/nickozy/wf-script-v2#readme",
   "dependencies": {
     "@barba/core": "^2.9.7",
     "@studio-freight/lenis": "^0.2.28",
