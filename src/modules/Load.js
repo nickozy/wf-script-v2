@@ -8,7 +8,7 @@ export default class extends module {
 
     init() {
         const load = new modularLoad({
-            enterDelay: 1000,
+            enterDelay: 300,
             transitions: {
                 customTransition: {
                     
