@@ -19,7 +19,6 @@ export default class extends module {
         load.on('loaded', (transition, oldContainer, newContainer) => {
             this.call('destroy', oldContainer, 'app');
             this.call('update', newContainer, 'app');
-            console.log('hello')
         });
     }
 }

@@ -25,10 +25,10 @@ window.onload = (event) => {
   }
 };
 
-export const EAGER_FONTS = [
-  { family: "Source Sans", style: "normal", weight: 400 },
-  { family: "Source Sans", style: "normal", weight: 700 },
-];
+// export const EAGER_FONTS = [
+//   { family: "Source Sans", style: "normal", weight: 400 },
+//   { family: "Source Sans", style: "normal", weight: 700 },
+// ];
 
 function init() {
   // globals();
