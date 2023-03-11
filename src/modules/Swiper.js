@@ -1,5 +1,5 @@
 import { module } from 'modujs';
-import Swiper from "swiper";
+import Swiper from 'swiper';
 
 
 export default class extends module {
@@ -10,10 +10,11 @@ export default class extends module {
     init(){
         const sswiper = new Swiper('.layout', {
         speed: 200,
-        slideClass:  'layout__list-item',
-        wrapperClass: 'layout__list'
+        wrapperClass: 'layout__list',
+        slideClass:  'layout__list-item'
     })
-    sswiper.load('loaded')
+    
+    sswiper()
     
 
 }
