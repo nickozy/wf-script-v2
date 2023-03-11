@@ -1,19 +1,16 @@
 import { module } from 'modujs';
 import Swiper from 'swiper';
 
-
 export default class extends module {
     constructor(m) {
         super(m);
     }
 
     init() {
-        this.sswiper = new Swiper('.layout', {
-        speed: 200,
-        wrapperClass: 'layout__list',
-        slideClass:  'layout__list-item'
-    })
-    console.log("swiper")
-}
-        
+        let sswiper = new Swiper('.layout', {
+            direction: 'vertical',
+            wrapperClass: 'layout__list',
+            slideClass:  'layout__list-item'
+        })
+    }
 }
