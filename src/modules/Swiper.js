@@ -1,5 +1,5 @@
 import jqueryScrollify from "jquery-scrollify";
-$(function () {
+jqueryScrollify(function () {
   $.scrollify({
     section: ".layout__list-item",
   });
