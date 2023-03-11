@@ -7,8 +7,8 @@ export default class extends module {
         super(m);
     }
 
-    init(){
-        const sswiper = new Swiper('.layout', {
+    init() {
+        this.sswiper = new Swiper('.layout', {
         speed: 200,
         wrapperClass: 'layout__list',
         slideClass:  'layout__list-item'
