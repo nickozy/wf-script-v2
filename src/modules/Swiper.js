@@ -2,7 +2,7 @@ import { module } from 'modujs';
 import Swiper from "swiper";
 
 function lau(){
-    if(window.innerWidth < 768){
+    if(window.innerWidth < 992){
         const layutSwiper = new Swiper('.layout', {
             speed: 200,
             slideClass:  'layout__list-item',
