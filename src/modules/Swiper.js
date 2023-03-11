@@ -13,6 +13,7 @@ export default class extends module {
         wrapperClass: 'layout__list',
         slideClass:  'layout__list-item'
     })
+    console.log("swiper")
 }
         
 }
