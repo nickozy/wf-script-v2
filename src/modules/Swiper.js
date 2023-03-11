@@ -13,6 +13,7 @@ export default class extends module {
         slideClass:  'layout__list-item',
         wrapperClass: 'layout__list'
     })
+    sswiper.load('loaded')
     
 
 }
