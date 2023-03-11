@@ -5,5 +5,5 @@ let sswiper = new Swiper(".layout", {
   direction: "vartical",
   mousewheel: true,
   wrapperClass: "layout__list",
-  slideClass: "layout__list-item",
+  slideClass: "swiper-slide",
 });
