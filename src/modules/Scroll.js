@@ -3,8 +3,8 @@ import { lazyLoadImage } from "../utils/image";
 import LocomotiveScroll from 'locomotive-scroll';
 
 export default class extends module {
-    constructor(m) {
-        super(m);
+    constructor(s) {
+        super(s);
     }
 
     init() {
