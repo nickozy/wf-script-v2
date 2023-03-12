@@ -23,18 +23,6 @@ export default class extends module {
         })
 
 
-        // const detailsElem = document.querySelector(".faq__list-header");
-
-        $(".faq__list-header").on("toggle", function (evt) {
-        if (detailsElem.open) {
-            this.scroll.update();
-        } else {
-            this.scroll.update();
-        }
-        },
-        false
-        );
-
     }
 
     /**
