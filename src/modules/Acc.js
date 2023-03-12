@@ -15,6 +15,8 @@ export default class extends module {
         if (this.data('open')) {
             this.$('section')[0].classList.add('is-open');
         }
+
+        console.log('acc')
     }
  
     toggleSection(e) {
