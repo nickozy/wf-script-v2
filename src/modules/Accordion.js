@@ -22,14 +22,14 @@ export default class extends module {
     toggleSection(e) {
         const target = e.currentTarget;
         const section = this.parent('section', target);
-        // const main = this.$('main', target);
+        const main = this.$('main', target);
         
         if (section.classList.contains('is-open')) {
             section.classList.remove('is-open');
         } else {
             this.$('section.is-open').classList.remove('is-open');
             section.classList.add('is-open');
-            // this.call('scrollto', section, 'scroll', 'main');
+            this.call('scrollto', section, 'scroll', 'main');
         }
     }
 }
