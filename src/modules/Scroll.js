@@ -21,6 +21,20 @@ export default class extends module {
         this.scroll.on('scroll', (args) => {
             // console.log(args.scroll);
         })
+
+
+        // const detailsElem = document.querySelector(".faq__list-header");
+
+        $(".faq__list-header").on("toggle", function (evt) {
+        if (detailsElem.open) {
+            this.scroll.update();
+        } else {
+            this.scroll.update();
+        }
+        },
+        false
+        );
+
     }
 
     /**
