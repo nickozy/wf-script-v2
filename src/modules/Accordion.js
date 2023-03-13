@@ -33,9 +33,9 @@ export default class extends module {
         if (section.classList.contains('is-open')) {
             section.classList.remove('is-open');
         } else {
-            this.$('section.is-open').classList.remove('is-open');
+            // this.$('section.is-open').classList.remove('is-open');
             section.classList.add('is-open');
-            this.call('scrollto', section, 'scroll', 'main');
+            // this.call('scrollto', section, 'scroll', 'main');
         }
     }
 }
