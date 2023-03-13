@@ -10,7 +10,7 @@
           header: 'toggleSection'
         }
       }
-      this.myScrollInstance = new Scroll(document.documentElement);
+      this.myScrollInstance = new Scroll('myScrollInstance');
     }
   
     toggleSection(e) {
