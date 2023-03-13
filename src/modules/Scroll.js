@@ -9,7 +9,7 @@ export default class extends module {
 
     init() {
         this.scroll = new LocomotiveScroll({
-            el: this.el,
+            el: document.querySelector(".main"),
             smooth: true
         });
 
