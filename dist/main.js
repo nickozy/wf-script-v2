@@ -4377,7 +4377,7 @@ __webpack_require__.r(__webpack_exports__);
     const target = e.currentTarget;
     const section = this.parent('section', target);
 
-    this.myScrollInstance.update();
+    myScrollInstance.update();
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');
