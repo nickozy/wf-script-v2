@@ -4361,34 +4361,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! locomotive-scroll */ "./node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js");
 
 
- 
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (class extends modujs__WEBPACK_IMPORTED_MODULE_0__.module {
-    constructor(m) {
-        super(m);
-        this.events = {
-            click: {
-                header: 'toggleSection'
-            }
-        } 
+  constructor(m) {
+    super(m);
+    this.events = {
+      click: {
+        header: 'toggleSection'
+      }
     }
- 
-    toggleSection(e) {
-        const target = e.currentTarget;
-        const section = this.parent('section', target);
-        const main = this.$('main', target);
-        
+    this.scr = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__["default"](); // создаем экземпляр LocomotiveScroll
+  }
 
- const scr = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__["default"]();
-scr.update();
-        if (section.classList.contains('is-open')) {
-            section.classList.remove('is-open');
-        } else {
+  toggleSection(e) {
+    const target = e.currentTarget;
+    const section = this.parent('section', target);
+    const main = this.$('main', target);
 
-            section.classList.add('is-open');
+    this.scr.update(); // вызываем метод update() для обновления Locomotive Scroll
 
-        }
+    if (section.classList.contains('is-open')) {
+      section.classList.remove('is-open');
+    } else {
+      section.classList.add('is-open');
     }
+  }
 });
+
 
 /***/ }),
 
