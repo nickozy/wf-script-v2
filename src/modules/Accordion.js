@@ -10,7 +10,7 @@
           header: 'toggleSection'
         }
       }
-      this.myScrollInstance = new Scroll(document.querySelector('[data-module-scroll]'));
+      this.myScrollInstance = new Scroll(document.documentElement);
     }
   
     toggleSection(e) {
