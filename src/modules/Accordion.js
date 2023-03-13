@@ -21,7 +21,7 @@ export default class extends module {
         const target = e.currentTarget;
         const section = this.parent('section', target);
         const main = this.$('main', target);
-        
+        this.scroll.update();
 
 
         if (section.classList.contains('is-open')) {
