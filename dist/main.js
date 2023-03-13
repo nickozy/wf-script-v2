@@ -4371,7 +4371,7 @@ __webpack_require__.r(__webpack_exports__);
           header: 'toggleSection'
         }
       }
-      this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"]('myScrollInstance');
+      this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.querySelector(".main"));
     }
   
     toggleSection(e) {
