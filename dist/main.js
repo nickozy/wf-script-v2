@@ -4368,7 +4368,6 @@ __webpack_require__.r(__webpack_exports__);
     this.events = {
       click: {
         header: 'toggleSection'
-        
       }
     }
     this.scr = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__["default"]({
