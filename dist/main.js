@@ -4360,33 +4360,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var modujs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! modujs */ "./node_modules/modujs/dist/main.esm.js");
 /* harmony import */ var _Scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Scroll */ "./src/modules/Scroll.js");
 
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (class extends modujs__WEBPACK_IMPORTED_MODULE_0__.module {
-  constructor(m) {
-    super(m);
-    this.events = {
-      click: {
-        header: 'toggleSection'
+  
+  
+  
+  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (class extends modujs__WEBPACK_IMPORTED_MODULE_0__.module {
+    constructor(m) {
+      super(m);
+      this.events = {
+        click: {
+          header: 'toggleSection'
+        }
       }
-    };
-    this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.querySelector("[data-module-scroll='main']"));
-  }
-
-  toggleSection(e) {
-    const target = e.currentTarget;
-    const section = this.parent('section', target);
-
-    myScrollInstance.update();
-
-    if (section.classList.contains('is-open')) {
-      section.classList.remove('is-open');
-    } else {
-      section.classList.add('is-open');
+      this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.querySelector("[data-module-scroll='main']"));
     }
-  }
-});
-
+  
+    toggleSection(e) {
+      const target = e.currentTarget;
+      const section = this.parent('section', target);
+      console.log(this.myScrollInstance);
+  
+      this.myScrollInstance.update();
+  
+      if (section.classList.contains('is-open')) {
+        section.classList.remove('is-open');
+      } else {
+        section.classList.add('is-open');
+      }
+    }
+  });
+  
 
 /***/ }),
 
