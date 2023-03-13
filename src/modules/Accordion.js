@@ -15,7 +15,7 @@ export default class extends module {
     const target = e.currentTarget;
     const section = this.parent('section', target);
 
-    Scroll.update();
+    console.log(Scroll)
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');

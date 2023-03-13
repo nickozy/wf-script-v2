@@ -4376,7 +4376,7 @@ __webpack_require__.r(__webpack_exports__);
     const target = e.currentTarget;
     const section = this.parent('section', target);
 
-    _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"].update();
+    console.log(_Scroll__WEBPACK_IMPORTED_MODULE_1__["default"])
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');
