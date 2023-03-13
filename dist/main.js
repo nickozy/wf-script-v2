@@ -4371,7 +4371,7 @@ __webpack_require__.r(__webpack_exports__);
       }
     }
     this.scr = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__["default"]({
-      el: document.querySelector('#scroll-container'), // корневой элемент
+      el: this.el, // корневой элемент
       smooth: true // включаем плавный скроллинг
     });
   }

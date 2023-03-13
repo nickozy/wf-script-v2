@@ -10,7 +10,7 @@ export default class extends module {
       }
     }
     this.scr = new LocomotiveScroll({
-      el: document.querySelector('#scroll-container'), // корневой элемент
+      el: this.el, // корневой элемент
       smooth: true // включаем плавный скроллинг
     });
   }
