@@ -4497,6 +4497,9 @@ __webpack_require__.r(__webpack_exports__);
     destroy() {
         this.scroll.destroy();
     }
+    update() {
+        this.scroll.update();
+    }
 });
 
 
