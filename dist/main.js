@@ -4369,16 +4369,15 @@ __webpack_require__.r(__webpack_exports__);
       click: {
         header: 'toggleSection'
       }
-    }
-    const myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.querySelector('.js-my-scroll'));
+    };
+    this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.querySelector('.js-my-scroll'));
   }
 
   toggleSection(e) {
     const target = e.currentTarget;
     const section = this.parent('section', target);
-    console.log(_Scroll__WEBPACK_IMPORTED_MODULE_1__["default"])
 
-    myScrollInstance.update();
+    this.myScrollInstance.update();
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');
@@ -4387,7 +4386,6 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
-
 
 
 /***/ }),

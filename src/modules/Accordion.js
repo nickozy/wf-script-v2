@@ -8,16 +8,15 @@ export default class extends module {
       click: {
         header: 'toggleSection'
       }
-    }
-    const myScrollInstance = new Scroll(document.querySelector('.js-my-scroll'));
+    };
+    this.myScrollInstance = new Scroll(document.querySelector('.js-my-scroll'));
   }
 
   toggleSection(e) {
     const target = e.currentTarget;
     const section = this.parent('section', target);
-    console.log(Scroll)
 
-    myScrollInstance.update();
+    this.myScrollInstance.update();
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');
@@ -26,4 +25,3 @@ export default class extends module {
     }
   }
 }
-
