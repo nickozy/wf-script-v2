@@ -18,7 +18,7 @@
       const section = this.parent('section', target);
       console.log(this.myScrollInstance);
   
-      this.myScrollInstance.update();
+      this.myScrollInstance.init();
   
       if (section.classList.contains('is-open')) {
         section.classList.remove('is-open');
