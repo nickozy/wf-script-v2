@@ -14,7 +14,6 @@ export default class extends module {
   toggleSection(e) {
     const target = e.currentTarget;
     const section = this.parent('section', target);
-    Scroll.init()
     console.log(Scroll)
 
     if (section.classList.contains('is-open')) {
