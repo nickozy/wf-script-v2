@@ -4370,7 +4370,7 @@ __webpack_require__.r(__webpack_exports__);
         header: 'toggleSection'
       }
     };
-    this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.querySelector('.js-my-scroll'));
+    this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.querySelector("[data-module-scroll='main']"));
   }
 
   toggleSection(e) {

@@ -9,7 +9,7 @@ export default class extends module {
         header: 'toggleSection'
       }
     };
-    this.myScrollInstance = new Scroll(document.querySelector('.js-my-scroll'));
+    this.myScrollInstance = new Scroll(document.querySelector("[data-module-scroll='main']"));
   }
 
   toggleSection(e) {
