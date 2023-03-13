@@ -11,19 +11,6 @@ export default class extends module {
         }
     }
  
-    init() {
-        if (this.data('open')) {
-            this.$('section')[0].classList.add('is-open');
-        }
-        
-    //     const isOpen = this.el.getAttribute('data-open');
-    // if (isOpen === 'true') {
-    //     const section = this.$('section')[0];
-    //     if (section) {
-    //         section.classList.add('is-open');
-    //     }
-    // }
-    }
  
     toggleSection(e) {
         const target = e.currentTarget;
@@ -33,9 +20,9 @@ export default class extends module {
         if (section.classList.contains('is-open')) {
             section.classList.remove('is-open');
         } else {
-            // this.$('section.is-open').classList.remove('is-open');
+
             section.classList.add('is-open');
-            // this.call('scrollto', section, 'scroll', 'main');
+
         }
     }
 }
