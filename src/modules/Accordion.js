@@ -9,15 +9,17 @@ export default class extends module {
         header: 'toggleSection'
       }
     }
-    this.scr = new LocomotiveScroll(); // создаем экземпляр LocomotiveScroll
+    this.scr = new LocomotiveScroll({
+      el: document.querySelector('#scroll-container'), // корневой элемент
+      smooth: true // включаем плавный скроллинг
+    });
   }
 
   toggleSection(e) {
     const target = e.currentTarget;
     const section = this.parent('section', target);
-    const main = this.$('main', target);
 
-    this.scr.update(); // вызываем метод update() для обновления Locomotive Scroll
+    this.scr.update();
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');

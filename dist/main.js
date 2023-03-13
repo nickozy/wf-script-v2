@@ -4370,15 +4370,17 @@ __webpack_require__.r(__webpack_exports__);
         header: 'toggleSection'
       }
     }
-    this.scr = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__["default"](); // создаем экземпляр LocomotiveScroll
+    this.scr = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__["default"]({
+      el: document.querySelector('#scroll-container'), // корневой элемент
+      smooth: true // включаем плавный скроллинг
+    });
   }
 
   toggleSection(e) {
     const target = e.currentTarget;
     const section = this.parent('section', target);
-    const main = this.$('main', target);
 
-    this.scr.update(); // вызываем метод update() для обновления Locomotive Scroll
+    this.scr.update();
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');
