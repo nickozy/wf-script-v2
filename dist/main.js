@@ -4455,7 +4455,7 @@ __webpack_require__.r(__webpack_exports__);
 
     init() {
         this.scroll = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_2__["default"]({
-            el: document.documentElement,
+            el: this.el,
             smooth: true
         });
 
