@@ -1,4 +1,5 @@
 import { module } from 'modujs';
+import LocomotiveScroll from 'locomotive-scroll';
  
 export default class extends module {
     constructor(m) {
@@ -11,12 +12,18 @@ export default class extends module {
         }
     }
  
+    init(){
+
+        this.scroll = new LocomotiveScroll();
+    }
  
     toggleSection(e) {
         const target = e.currentTarget;
         const section = this.parent('section', target);
         const main = this.$('main', target);
         
+
+
         if (section.classList.contains('is-open')) {
             section.classList.remove('is-open');
         } else {
