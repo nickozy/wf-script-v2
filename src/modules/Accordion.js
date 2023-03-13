@@ -1,5 +1,5 @@
 import { module } from 'modujs';
-import LocomotiveScroll from 'locomotive-scroll';
+import Scroll from './Scroll';
 
 export default class extends module {
   constructor(m) {
@@ -9,17 +9,13 @@ export default class extends module {
         header: 'toggleSection'
       }
     }
-    this.scr = new LocomotiveScroll({
-      el: this.el, // корневой элемент
-      smooth: true // включаем плавный скроллинг
-    });
   }
 
   toggleSection(e) {
     const target = e.currentTarget;
     const section = this.parent('section', target);
 
-    this.scr.update();
+    Scroll.update();
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');

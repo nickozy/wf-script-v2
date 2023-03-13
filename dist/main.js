@@ -4358,7 +4358,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var modujs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! modujs */ "./node_modules/modujs/dist/main.esm.js");
-/* harmony import */ var locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! locomotive-scroll */ "./node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js");
+/* harmony import */ var _Scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Scroll */ "./src/modules/Scroll.js");
 
 
 
@@ -4370,17 +4370,13 @@ __webpack_require__.r(__webpack_exports__);
         header: 'toggleSection'
       }
     }
-    this.scr = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_1__["default"]({
-      el: this.el, // корневой элемент
-      smooth: true // включаем плавный скроллинг
-    });
   }
 
   toggleSection(e) {
     const target = e.currentTarget;
     const section = this.parent('section', target);
 
-    this.scr.update();
+    _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"].update();
 
     if (section.classList.contains('is-open')) {
       section.classList.remove('is-open');
