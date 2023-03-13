@@ -13,7 +13,7 @@ export default class extends module {
  
     init() {
         // if (this.data('open')) {
-            this.$('section').classList.add('is-open');
+            this.acc.$('section').classList.add('is-open');
         // }
         
     }
