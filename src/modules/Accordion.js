@@ -10,7 +10,7 @@
           header: 'toggleSection'
         }
       }
-      this.myScrollInstance = new Scroll(document.querySelector(".main"));
+      this.myScrollInstance = new Scroll(document.documentElement);
     }
   
     toggleSection(e) {
@@ -18,7 +18,7 @@
       const section = this.parent('section', target);
       console.log(this.myScrollInstance);
   
-      this.myScrollInstance.init();
+      this.myScrollInstance.update();
   
       if (section.classList.contains('is-open')) {
         section.classList.remove('is-open');

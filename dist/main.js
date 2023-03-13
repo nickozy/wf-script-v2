@@ -4371,7 +4371,7 @@ __webpack_require__.r(__webpack_exports__);
           header: 'toggleSection'
         }
       }
-      this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.querySelector(".main"));
+      this.myScrollInstance = new _Scroll__WEBPACK_IMPORTED_MODULE_1__["default"](document.documentElement);
     }
   
     toggleSection(e) {
@@ -4379,7 +4379,7 @@ __webpack_require__.r(__webpack_exports__);
       const section = this.parent('section', target);
       console.log(this.myScrollInstance);
   
-      this.myScrollInstance.init();
+      this.myScrollInstance.update();
   
       if (section.classList.contains('is-open')) {
         section.classList.remove('is-open');
@@ -4455,7 +4455,7 @@ __webpack_require__.r(__webpack_exports__);
 
     init() {
         this.scroll = new locomotive_scroll__WEBPACK_IMPORTED_MODULE_2__["default"]({
-            el: document.querySelector(".main"),
+            el: document.documentElement,
             smooth: true
         });
 
